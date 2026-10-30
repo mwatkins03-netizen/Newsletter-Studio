@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Newsletter Studio</title>
+<meta name="description" content="A local-first visual editor for newsletters. Write once, publish as a web page, an email and a printable PDF.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142142'/%3E%3Crect x='6' y='8' width='20' height='3' fill='%23CF142B'/%3E%3Crect x='6' y='14' width='20' height='2' fill='%23fff'/%3E%3Crect x='6' y='19' width='14' height='2' fill='%23fff'/%3E%3Crect x='6' y='24' width='17' height='2' fill='%23B1DDF6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="studio.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#fff"/><rect x="6" y="8" width="20" height="3" fill="#CF142B"/><rect x="6" y="14" width="20" height="2" fill="#142142"/><rect x="6" y="19" width="14" height="2" fill="#142142"/><rect x="6" y="24" width="17" height="2" fill="#006BA6"/></svg><span>Newsletter Studio <small>local-first</small></span></div>
+  <label class="sr" for="issueSel">Current issue</label>
+  <select id="issueSel" title="Switch issue"></select>
+  <div class="menu"><button class="btn ghost sm" id="issueMenuBtn" aria-haspopup="true" aria-expanded="false">Issues ▾</button>
+    <div class="pop" id="issueMenu" role="menu">
+      <button data-act="new"><span>New blank issue</span></button>
+      <button data-act="dup"><span>Duplicate this issue <small>Copy of the current issue, next number</small></span></button>
+      <button data-act="sample"><span>Load the sample issue <small>Taming the Whirlwind, Issue 1</small></span></button>
+      <hr>
+      <button data-act="import"><span>Import issue JSON… <small>From a file exported by this studio</small></span></button>
+      <button data-act="history"><span>History <small>Restore an earlier autosave of this issue</small></span></button>
+      <hr>
+      <button data-act="delete"><span style="color:#CF142B">Delete this issue</span></button>
+    </div>
+  </div>
+  <div class="grow"></div>
+  <div class="status"><span id="wc"><b>0</b> words</span><span id="saved">Saved</span></div>
+  <div class="seg" role="group" aria-label="Mode"><button id="modeEdit" aria-pressed="true">Edit</button><button id="modePreview" aria-pressed="false">Preview</button></div>
+  <div class="menu"><button class="btn sm" id="exportBtn" aria-haspopup="true" aria-expanded="false">Export ▾</button>
+    <div class="pop" id="exportMenu" role="menu">
+      <button data-act="json"><span>Issue JSON <small>The canonical file. Keep this; everything else is made from it.</small></span></button>
+      <hr>
+      <button data-act="web"><span>Web page (HTML) <small>Self-contained, responsive, light and dark</small></span></button>
+      <button data-act="email"><span>Email (HTML) <small>600px tables, inline styles, no scripts or web fonts</small></span></button>
+      <button data-act="print"><span>Print / PDF <small>Opens the Letter edition and the print dialog. Choose Save as PDF.</small></span></button>
+      <hr>
+      <button data-act="wp"><span>Copy for WordPress <small>Block markup for a new draft post. Paste into the Code editor.</small></span></button>
+      <button data-act="copyemail"><span>Copy email HTML <small>Paste into a Gmail or Outlook template tool</small></span></button>
+    </div>
+  </div>
+  <button class="btn ghost sm" id="settingsBtn" aria-pressed="false">Publication</button>
+  <button class="btn ghost sm" id="helpBtn">Help</button>
+</header>
+
+<div class="work">
+  <aside class="rail" aria-label="Blocks">
+    <h2>Add a block</h2>
+    <div class="pal" id="palette"></div>
+    <h2 style="padding-top:10px">Outline</h2>
+    <ul class="outline" id="outline" aria-label="Issue outline"></ul>
+    <p class="tip">Click text to edit it in place. Select a block for its settings. <kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> moves a block, <kbd>⌘</kbd>/<kbd>Ctrl</kbd>+<kbd>K</kbd> adds a link.</p>
+  </aside>
+
+  <section class="stage" id="stage" data-mode="edit" aria-label="Editor">
+    <div class="canvas-wrap"><div class="canvas" id="canvas"></div></div>
+    <div class="preview">
+      <div class="pbar">
+        <div class="seg" role="group" aria-label="Edition"><button data-ed="web" aria-pressed="true">Web</button><button data-ed="email" aria-pressed="false">Email</button><button data-ed="print" aria-pressed="false">Print / PDF</button></div>
+        <div class="seg" role="group" aria-label="Width" id="widthSeg"><button data-w="375">375</button><button data-w="600">600</button><button data-w="1280" aria-pressed="true">Wide</button></div>
+        <span class="hint" id="phint"></span>
+        <button class="btn sm" id="openPreview" style="background:#142142;color:#fff;border-color:#142142">Open in a tab</button>
+      </div>
+      <div class="pframe" id="pframe"><iframe id="pv" title="Edition preview" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe></div>
+    </div>
+    <div class="ftb" id="ftb" role="toolbar" aria-label="Text formatting">
+      <button data-cmd="bold" title="Bold (Ctrl/Cmd+B)">B</button>
+      <button data-cmd="italic" title="Italic (Ctrl/Cmd+I)"><i>I</i></button>
+      <button data-cmd="link" title="Link (Ctrl/Cmd+K)">🔗</button>
+      <button data-cmd="unlink" title="Remove link">⨯</button>
+    </div>
+  </section>
+
+  <aside class="side" id="side" aria-label="Settings">
+    <div class="tabs" role="tablist"><button role="tab" id="tabBlock" aria-selected="true">Block</button><button role="tab" id="tabPub" aria-selected="false">Publication</button></div>
+    <div class="scroll" id="inspector"></div>
+  </aside>
+</div>
+
+<dialog id="dlg"><form method="dialog"><div class="dh"><span id="dlgTitle">Dialog</span><button type="button" value="cancel" aria-label="Close" id="dlgX">×</button></div><div class="db" id="dlgBody"></div><div class="df" id="dlgFoot"></div></form></dialog>
+<input type="file" id="fileJson" accept="application/json,.json" class="sr" aria-hidden="true" tabindex="-1">
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="render.js"></script>
+<script src="studio.js"></script>
+</body>
+</html>

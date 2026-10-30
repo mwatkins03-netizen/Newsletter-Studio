@@ -1,0 +1,754 @@
+{
+ "schema": "newsletter-studio/issue",
+ "version": 1,
+ "id": "sample-whirlwind-1",
+ "created": "2026-10-30T14:33:46.435534+00:00",
+ "updated": "2026-10-30T14:33:46.435534+00:00",
+ "publication": {
+  "title": "Taming the Whirlwind",
+  "kicker": "University of Mississippi · Academic Innovations Group",
+  "dek": "A monthly guide for UM faculty on how AI is changing education and culture: what to read, what to try in class, and what is happening on campus.",
+  "publisher": "the Academic Innovations Group, University of Mississippi",
+  "editor": "Marc Watkins",
+  "contact": "innovation@olemiss.edu",
+  "address": "Hill Hall 106",
+  "url": "",
+  "footer": "",
+  "theme": {
+   "navy": "#142142",
+   "red": "#CF142B",
+   "powder": "#006BA6",
+   "light": "#B1DDF6",
+   "panel": "#F3F6FA",
+   "rule": "#D6DCE6",
+   "ink": "#1D2638",
+   "muted": "#4A5568",
+   "paper": "#FFFFFF",
+   "fontDisplay": "Archivo",
+   "fontBody": "IBM Plex Serif",
+   "fontUi": "IBM Plex Sans"
+  }
+ },
+ "issue": {
+  "number": 1,
+  "month": "October 2026",
+  "coverage": "News from Sept 24 to Oct 19, 2026",
+  "status": "Pilot draft, not yet reviewed"
+ },
+ "blocks": [
+  {
+   "id": "bujzde8gx",
+   "type": "note",
+   "label": "Review status",
+   "tone": "review",
+   "html": "<b>Pilot draft, not yet reviewed.</b> AI drafted this issue and the editor has not yet checked the summaries. Delete this box once the issue has been reviewed."
+  },
+  {
+   "id": "bd6ncf10e",
+   "type": "toc",
+   "label": "In this issue"
+  },
+  {
+   "id": "bpf91dhod",
+   "type": "note",
+   "label": "From the editor",
+   "tone": "editor",
+   "html": "Two or three sentences on what stood out this month. Only the editor writes this note."
+  },
+  {
+   "id": "bzdoc9is0",
+   "type": "band",
+   "text": "The month in AI"
+  },
+  {
+   "id": "bj8ht9lgm",
+   "type": "section",
+   "label": "Education first",
+   "heading": "AI and teaching this month",
+   "deck": "Four stories for faculty, each with a suggestion for your classroom."
+  },
+  {
+   "id": "bxg9edn58",
+   "type": "paragraph",
+   "html": "Access labels: <b>UM access</b> means UM subscribes, so sign in with your UM account (The Chronicle of Higher Education, The New York Times). <b>Free</b> needs no login. <b>Metered</b> allows a few free articles a month."
+  },
+  {
+   "id": "b1u33xtpl",
+   "type": "story",
+   "kicker": "Surveillance and trust",
+   "head": "Faculty are watching students more closely. Is it worth the cost?",
+   "body": "Beth McMurtrie reports that professors now monitor students through AI detectors, keystroke and draft logs, webcams and lockdown browsers, or move writing and tests back into the classroom. She finds that these measures strain trust, take up faculty time and may weaken the independent thinking college is meant to build. Some campuses are trying tech-free study and writing spaces instead.",
+   "links": [
+    {
+     "title": "The New Nanny State",
+     "url": "https://www.chronicle.com/article/the-new-nanny-state",
+     "outlet": "The Chronicle of Higher Education",
+     "date": "Oct 12",
+     "access": "UM access"
+    }
+   ],
+   "classroom": "Before adding a monitoring tool, ask what it tells you that a conversation with the student would not. The Academic Integrity Icons tool below is one way to set expectations up front instead."
+  },
+  {
+   "id": "bpft75v2s",
+   "type": "story",
+   "kicker": "What the evidence says",
+   "head": "Schools are adopting AI faster than anyone can measure whether it helps",
+   "body": "An NPR series by Lee V. Gaines follows K-12 districts that are piloting AI for lesson planning, progress tracking and chatbot feedback, including an emotional-support chatbot at an Ohio alternative school. Research on student outcomes is thin, there is no agreed way to measure success, and most states have issued no guidance. These are the habits our incoming students will bring with them.",
+   "links": [
+    {
+     "title": "Schools are experimenting with AI with little evidence or policy to guide them",
+     "url": "https://www.npr.org/2026/09/28/nx-s1-5759718/ai-schools-experiment-research",
+     "outlet": "NPR",
+     "date": "Sept 28",
+     "access": "Free"
+    },
+    {
+     "title": "Schools struggle to measure how much AI experiments are helping",
+     "url": "https://www.npr.org/2026/10/19/nx-s1-5991881/schools-struggle-to-measure-how-much-ai-experiments-are-helping",
+     "outlet": "NPR",
+     "date": "Oct 19",
+     "access": "Free"
+    }
+   ],
+   "classroom": "Ask students in the first week how AI was used in their high school classes and what rules they were given."
+  },
+  {
+   "id": "beh60kvj5",
+   "type": "story",
+   "kicker": "Faculty AI norms",
+   "head": "Do faculty play by the rules they set for students?",
+   "body": "Several Chronicle pieces this month turn the AI question toward faculty. A journal asked political scientist Allison Stanger to resubmit an accepted article because some sentences seemed AI-written, and she argues that scholarly writing should be judged on substance. Dan Sarofian-Butin reviewed 1,191 education-leadership dissertations from 2025 and reports that about a third contained substantial AI-generated text. A College Matters episode asks whether administrators who use AI in their writing should disclose it.",
+   "links": [
+    {
+     "title": "Who Cares Whether Academics Use AI to Write?",
+     "url": "https://www.chronicle.com/article/who-cares-whether-academics-use-ai-to-write",
+     "outlet": "The Chronicle of Higher Education",
+     "date": "Oct 13",
+     "access": "UM access"
+    },
+    {
+     "title": "Has AI Destroyed the Doctoral Dissertation?",
+     "url": "https://www.chronicle.com/article/has-ai-destroyed-the-doctoral-dissertation",
+     "outlet": "The Chronicle of Higher Education",
+     "date": "Oct 8",
+     "access": "UM access"
+    },
+    {
+     "title": "The AI Police Are Coming for Everybody (podcast)",
+     "url": "https://www.chronicle.com/podcast/college-matters-from-the-chronicle/the-ai-police-are-coming-for-everybody",
+     "outlet": "The Chronicle of Higher Education",
+     "date": "Sept 30",
+     "access": "UM access"
+    }
+   ],
+   "classroom": "If you advise graduate students or serve on committees, talk with your program about what AI disclosure should look like in theses and dissertations."
+  },
+  {
+   "id": "b0ce9uvw5",
+   "type": "story",
+   "kicker": "What is working",
+   "head": "Two classroom moves you can try this semester",
+   "body": "At the University of Nevada, Reno, Sean O'Neil replaced some written work with graded discussions, using practice rounds and small 'spotlight' groups to prepare students. Separately, Sam Wineburg and Nadav Ziv found that about three in ten high schoolers trusted a false chatbot answer and none checked it, and they suggest simple habits such as asking follow-up questions and comparing answers to the same prompt.",
+   "links": [
+    {
+     "title": "Using Graded Discussions to Reduce AI Abuse and Build Skills",
+     "url": "https://www.chronicle.com/newsletter/teaching/2026-09-24",
+     "outlet": "The Chronicle of Higher Education",
+     "date": "Sept 24",
+     "access": "UM access"
+    },
+    {
+     "title": "Think Your Students Know More About AI Than You Do? Read This",
+     "url": "https://www.edweek.org/technology/opinion-think-your-students-know-more-about-ai-than-you-do-read-this/2026/10",
+     "outlet": "Education Week",
+     "date": "Oct 7",
+     "access": "Metered"
+    }
+   ],
+   "classroom": "Try one class period where students check a chatbot answer against two sources before discussing it."
+  },
+  {
+   "id": "b3efr4edt",
+   "type": "section",
+   "label": "Student voices",
+   "heading": "Students on how AI is changing their work",
+   "deck": "Stories where students describe how AI is changing their own work. Both are from earlier this fall; we will keep looking for new ones each month."
+  },
+  {
+   "id": "b2sywb3wk",
+   "type": "resource",
+   "title": "Student Journalists: AI Is Changing Our Work, and Not For the Better",
+   "url": "https://www.the74million.org/article/student-journalists-ai-is-changing-our-work-and-not-for-the-better/",
+   "source": "The 74, Aug 20",
+   "access": "Free",
+   "html": "Three high school journalists describe AI straining trust between writers and editors, unreliable detectors, and teachers who use chatbots to plan and grade while asking students not to.",
+   "um": false,
+   "buttonText": "Read"
+  },
+  {
+   "id": "bh5dnsipz",
+   "type": "resource",
+   "title": "Student Artists Wrestle with AI's Promise and Peril",
+   "url": "https://www.edsurge.com/news/student-artists-wrestle-with-ais-promise-and-peril",
+   "source": "EdSurge, Aug 27",
+   "access": "Free",
+   "html": "Young winners of a Boston art competition made work about AI in their communities, and several chose to limit or avoid AI in their own pieces.",
+   "um": false,
+   "buttonText": "Read"
+  },
+  {
+   "id": "bz5fk2z9r",
+   "type": "section",
+   "label": "Culture",
+   "heading": "AI beyond the classroom",
+   "deck": ""
+  },
+  {
+   "id": "bi19r0wyo",
+   "type": "story",
+   "kicker": "Teens, chatbots and safety",
+   "head": "Regulators move against chatbot makers over harm to young users",
+   "body": "A Common Sense Media test found that most of the safeguards in ChatGPT for Teens did not work, and the chatbot rarely alerted parents when conversations turned to self-harm. Days later, eight states sued OpenAI under consumer-protection law, and Character.AI, the companion-chatbot company tied to teen-suicide lawsuits, filed for bankruptcy. Many students turn to chatbots for emotional support, so this matters for advising as well.",
+   "links": [
+    {
+     "title": "ChatGPT for Teens has special safeguards. A watchdog group finds most don't work",
+     "url": "https://www.npr.org/2026/10/09/nx-s1-5995514/chatgpt-openai-teens-mental-health",
+     "outlet": "NPR",
+     "date": "Oct 9",
+     "access": "Free"
+    },
+    {
+     "title": "OpenAI sued by 8 states over ChatGPT safety concerns",
+     "url": "https://www.cnbc.com/2026/10/14/openai-sued-by-8-states-over-chatgpt-safety-concerns-.html",
+     "outlet": "CNBC",
+     "date": "Oct 14",
+     "access": "Free"
+    }
+   ],
+   "classroom": ""
+  },
+  {
+   "id": "bjfljooa5",
+   "type": "story",
+   "kicker": "Human-made work",
+   "head": "Platforms and prizes try to separate human work from machine work",
+   "body": "Deezer will let listeners hide fully AI-generated music, which now makes up more than half of its daily uploads. Comedians report AI avatars on Instagram copying their routines nearly word for word. A Quebec novelist lost a Goncourt nomination after an AI detector flagged his book, which he says he wrote himself. The detector problem is the same one faculty face with student writing.",
+   "links": [
+    {
+     "title": "Deezer will soon let you filter out AI-generated music",
+     "url": "https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/",
+     "outlet": "TechCrunch",
+     "date": "Oct 14",
+     "access": "Free"
+    },
+    {
+     "title": "Canadian publisher supports Quebec novelist after AI denial",
+     "url": "https://www.cp24.com/news/canada/2026/10/14/canadian-publisher-supports-quebec-novelist-thelyson-orelien-after-ai-denial/",
+     "outlet": "CP24 (AFP)",
+     "date": "Oct 14",
+     "access": "Free"
+    }
+   ],
+   "classroom": ""
+  },
+  {
+   "id": "blqsaj08x",
+   "type": "story",
+   "kicker": "Careers and curriculum",
+   "head": "Entry-level work shrinks while colleges add AI programs",
+   "body": "Anthropic reported that junior technical hires fell from 27% to 9% of its technical hiring. NPR's The Indicator looks at colleges launching applied-AI majors as humanities degrees decline, and Inside Higher Ed reports that philosophy departments are hiring AI specialists even as the wider humanities job market shrinks.",
+   "links": [
+    {
+     "title": "New career paths: Colleges now offer degrees in influencing and AI",
+     "url": "https://www.npr.org/2026/10/09/nx-s1-5991808/new-career-paths-colleges-now-offer-degrees-in-influencing-and-ai",
+     "outlet": "NPR",
+     "date": "Oct 9",
+     "access": "Free"
+    },
+    {
+     "title": "Universities Are on an AI Philosopher Hiring Spree",
+     "url": "https://www.insidehighered.com/news/faculty/2026/10/15/universities-have-gone-ai-philosopher-hiring-spree",
+     "outlet": "Inside Higher Ed",
+     "date": "Oct 15",
+     "access": "Free"
+    },
+    {
+     "title": "Anthropic says its workforce has become less junior",
+     "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+     "outlet": "TechCrunch",
+     "date": "Oct 17",
+     "access": "Free"
+    }
+   ],
+   "classroom": ""
+  },
+  {
+   "id": "bui6d39zz",
+   "type": "band",
+   "text": "From AIG"
+  },
+  {
+   "id": "bzzg4zdme",
+   "type": "section",
+   "label": "Made at UM",
+   "heading": "Two UM resources to try this month",
+   "deck": "These two slots rotate monthly."
+  },
+  {
+   "id": "bn2khvdga",
+   "type": "callout",
+   "label": "Made at UM · For students, any discipline",
+   "heading": "Pause Before You Prompt",
+   "tone": "red",
+   "html": "A short reflection students complete before deciding whether to use AI on a task. It is built on a framework by Maggie Boyd and colleagues at Boston University (2025). Seven questions are arranged as petals: personal motives, accuracy, ethics, consequences, privacy, copyright and transparency. The aim is to keep students in charge of their own learning instead of treating AI as a co-writer."
+  },
+  {
+   "id": "bj8gxbeny",
+   "type": "image",
+   "src": "",
+   "publicSrc": "https://raw.githubusercontent.com/mwatkins03-netizen/The-Grove-Lab/main/shots/pause-before-prompt.jpg",
+   "alt": "Opening screen of the Pause Before You Prompt interactive, with a pause button at the center of a flower of seven petals.",
+   "caption": "The digital version opens on the seven petals. Students choose two or three to work through.",
+   "size": "medium"
+  },
+  {
+   "id": "bjqwx4hh5",
+   "type": "resource",
+   "title": "Analog version",
+   "url": "https://docs.google.com/document/d/1dMqR5Lk-IHwu5A_VwRCxLiXsR4crY7cRGXcruXpxURE/edit?usp=sharing",
+   "source": "Pause Before You Prompt",
+   "access": "Free",
+   "html": "A handout for class discussion or written reflection. Students start from each petal's question and branch into sub-questions. Instructor notes suggest scaffolding it over time and pairing it with recent news on AI's effects.",
+   "um": true,
+   "buttonText": "Open"
+  },
+  {
+   "id": "b344tfjgv",
+   "type": "resource",
+   "title": "Digital version",
+   "url": "https://mwatkins03-netizen.github.io/Pause-Before-You-Prompt-Opus-4.8-/",
+   "source": "Pause Before You Prompt",
+   "access": "Free",
+   "html": "An interactive for online and hybrid courses. Students pick two or three petals, read from 16 linked critical sources, write a reflection for each and a final decision, then export it as a web page or PDF to submit. Responses stay in the student's browser.",
+   "um": true,
+   "buttonText": "Open"
+  },
+  {
+   "id": "bq4k7bn7x",
+   "type": "paragraph",
+   "html": "<b>Try it:</b> Assign it before the first assignment where AI use is permitted, and collect the export."
+  },
+  {
+   "id": "bj8b7tfq7",
+   "type": "callout",
+   "label": "Made at UM · For faculty, shared with students",
+   "heading": "Academic Integrity Icons",
+   "tone": "red",
+   "html": "A builder that shows students, at a glance, what they may and may not do on an assignment. You choose a rule in up to ten categories, including getting help, collaboration, reuse of prior work, open-book research, where the work is done, citation, devices and late work. The AI category uses the five levels of the AI Assessment Scale (Perkins, Furze, Roe and MacVaugh), from No AI to AI Exploration. Each rule shows as a badge marked Permitted, Conditions apply or Not permitted."
+  },
+  {
+   "id": "bxkwo886v",
+   "type": "image",
+   "src": "",
+   "publicSrc": "https://raw.githubusercontent.com/mwatkins03-netizen/The-Grove-Lab/main/shots/academic-integrity-icons.jpg",
+   "alt": "The Academic Integrity Icons builder: category cards with option buttons on the left and a live Assignment Guidelines preview on the right, with each rule marked Not permitted.",
+   "caption": "The builder set up for an in-class exam. Pick options on the left; the badge set students will see updates on the right.",
+   "size": "medium"
+  },
+  {
+   "id": "bompzom75",
+   "type": "list",
+   "style": "numbers",
+   "items": [
+    "Pick one option per category and switch off any category that does not apply. The preview updates as you go.",
+    "Name the assignment, for example Essay 2: Rhetorical Analysis.",
+    "Open Share &amp; embed and choose a student link, an embed for a Blackboard page, paste-in HTML that works in Blackboard, email or Word, or a SCORM package. Badges also download as PNG or SVG.",
+    "The settings live in the link, so bookmark it to reuse or adjust the set later."
+   ]
+  },
+  {
+   "id": "bwbbr4qmw",
+   "type": "resource",
+   "title": "Open the builder",
+   "url": "https://mwatkins03-netizen.github.io/Academic-Integrity-Icons-Claude-4.8-/",
+   "source": "Academic Integrity Icons",
+   "access": "Free",
+   "html": "",
+   "um": true,
+   "buttonText": "Open"
+  },
+  {
+   "id": "b2wxfogo4",
+   "type": "resource",
+   "title": "Example: in-class exam set",
+   "url": "https://mwatkins03-netizen.github.io/Academic-Integrity-Icons-Claude-4.8-/?s=help-none.collab-individual.reuse-none.research-closed.home-proctored.ai-l1#build",
+   "source": "Academic Integrity Icons",
+   "access": "Free",
+   "html": "",
+   "um": true,
+   "buttonText": "Open"
+  },
+  {
+   "id": "bmvn4a4wf",
+   "type": "list",
+   "style": "bullets",
+   "items": [
+    "<b>In-class exam:</b> No outside help, individual work, no reuse, closed book, in class or proctored, AI Level 1 (No AI).",
+    "<b>Take-home essay:</b> Writing center help allowed, discuss ideas but submit your own work, cite your own prior work, open research, take-home, AI Level 3 (AI Collaboration)."
+   ]
+  },
+  {
+   "id": "bhym4l1vf",
+   "type": "paragraph",
+   "html": "<b>Try it:</b> Paste the badge set at the top of each assignment in Blackboard so the rules sit next to the instructions."
+  },
+  {
+   "id": "bz3zfkkib",
+   "type": "section",
+   "label": "Call for builds",
+   "heading": "The Grove Lab",
+   "deck": ""
+  },
+  {
+   "id": "bj3j4wj99",
+   "type": "callout",
+   "label": "Open call · No deadline",
+   "heading": "Bring an idea. Leave with a working prototype.",
+   "tone": "navy",
+   "html": "The Grove Lab is AIG's tinkering lab for faculty who want to see what agentic AI can build for their teaching or research. You bring the idea and the subject expertise. AIG uses an agentic harness to build a working browser-based prototype with you, then you try it, react to it and decide what happens next. <a href=\"https://mwatkins03-netizen.github.io/The-Grove-Lab/form.html\">Submit a build idea</a> · <a href=\"https://mwatkins03-netizen.github.io/The-Grove-Lab/gallery.html\">Browse the gallery</a> · <a href=\"https://mwatkins03-netizen.github.io/The-Grove-Lab/guidelines.html\">Read the guidelines</a> · Questions: mwatkins@olemiss.edu"
+  },
+  {
+   "id": "bibag7i1m",
+   "type": "heading",
+   "text": "How a build works",
+   "level": 3
+  },
+  {
+   "id": "bnbqns6pu",
+   "type": "list",
+   "style": "numbers",
+   "items": [
+    "<b>You describe it.</b> A few plain sentences about what students or researchers should be able to do.",
+    "<b>The agent builds it.</b> Directed by AIG, an AI agent plans the app, writes the code and tests it in a browser.",
+    "<b>You try it.</b> You use the prototype, react and ask for changes. A prototype is for trying and discussing.",
+    "<b>You decide.</b> Keep it private, show it at an AI Institute or Task Force meeting, or share it in the gallery with credit."
+   ]
+  },
+  {
+   "id": "bq80idw37",
+   "type": "callout",
+   "label": "What you get",
+   "heading": "",
+   "tone": "powder",
+   "html": "• A conversation about whether current agentic tools fit your idea<br>• A working prototype that runs in any browser, aligned with your learning or research goals<br>• A gallery of about 35 earlier builds to borrow ideas from<br>• A chance to show your build at an AI Institute or Task Force meeting, with credit"
+  },
+  {
+   "id": "b06i8j76b",
+   "type": "callout",
+   "label": "Know the limits",
+   "heading": "",
+   "tone": "red",
+   "html": "• Prototypes only. Each needs review for accessibility, security and student data before students use it<br>• No student data: no names, ID numbers, grades or work tied to a person<br>• Most builds take a week or more, and AIG cannot take every request<br>• Accounts, servers, live AI or student records need a conversation first<br>• No gambling or prediction markets, deepfakes, assignment traps or spam-like bots"
+  },
+  {
+   "id": "b2lajlj4h",
+   "type": "heading",
+   "text": "Two builds that show what an agent can do",
+   "level": 3
+  },
+  {
+   "id": "b9du7794g",
+   "type": "callout",
+   "label": "Research and outside data",
+   "heading": "A Living Century of Antibiotics",
+   "tone": "blue",
+   "html": "<b>What it does.</b> An interactive history of antibiotic discovery joined to real resistance surveillance. Students drag a timeline from 1928 to 2026 to see when each drug arrived and when resistance was first documented. In the Live Data Lab they choose a bacterium, antibiotic, country, specimen and year and watch a dish of colonies respond in proportion to the reported share of resistant isolates. A Compare view sets two drugs side by side and says so when the numbers come from different organisms or methods.<br><br><b>What the agent built.</b> Connected the app to five public sources: the WHO Global Health Observatory, CDC BEAM, ClinicalTrials.gov, PubMed and openFDA. Added an evidence inspector so every number on screen traces back to its source. AI drafted the historical narratives from cited sources; the surveillance figures come straight from the data and are never generated.<br><br><b>Fits courses in:</b> Biology, microbiology, nursing, pharmacy, public health, history of science. <b>Grove Lab scale:</b> Involved (live outside data).<br><b>Try it in class:</b> Have students find a drug and bacterium pair where resistance rose, trace the figure on the Sources page, and explain what a percentage of tested isolates does and does not tell a patient.<br><i>Built by Marc Watkins with Claude. Interaction concept adapted from A Century of Antibiotics by Soumya.</i> <a href=\"https://mwatkins03-netizen.github.io/A-living-century-of-antibiotics-Fable/\">Open the build</a>"
+  },
+  {
+   "id": "b9dpmrcg6",
+   "type": "image",
+   "src": "",
+   "publicSrc": "https://raw.githubusercontent.com/mwatkins03-netizen/The-Grove-Lab/main/shots/antibiotics.jpg",
+   "alt": "Opening screen of A Living Century of Antibiotics: a dark petri dish with drifting bacteria and the headline A living century of antibiotics.",
+   "caption": "Live Data Lab: pick a bacterium, drug, place and year, then apply the antibiotic.",
+   "size": "full"
+  },
+  {
+   "id": "b29be2u66",
+   "type": "callout",
+   "label": "Stand-alone learning app",
+   "heading": "Write Music: The Sentence Sound Lab",
+   "tone": "blue",
+   "html": "<b>What it does.</b> Turns Gary Provost's lesson on sentence variety into something students can see and hear. Each sentence is colored by length on a heat map, from a one-to-three-word Spark to a Crescendo of 25 words or more, and the text plays as music, with each word a note and each sentence break a rest. Students read 18 public-domain writers in the Library, paste in their own draft, shape the sound in the Studio, record themselves reading in the Booth, then reflect and export.<br><br><b>What the agent built.</b> Built the whole lab as a single web page: the heat map, a synthesizer that runs on the browser's own audio engine, a recording booth, reflection prompts, exports (HTML report, PDF and WAV audio) and a 12-page printable packet for screen-free practice. There are no accounts and no server, and student writing stays in the student's browser.<br><br><b>Fits courses in:</b> Composition, creative writing, journalism, speech, English language learners. <b>Grove Lab scale:</b> Moderate (several screens, saved work, export).<br><b>Try it in class:</b> Students paste a paragraph from a current draft, find one run of same-length sentences, revise it, and export the before-and-after report with a short reflection.<br><i>Built by Marc Watkins with Claude, based on Gary Provost's 100 Ways to Improve Your Writing (1985).</i> <a href=\"https://mwatkins03-netizen.github.io/Sentence-Sound-Lab-Fable-5/\">Open the build</a>"
+  },
+  {
+   "id": "bmr26846p",
+   "type": "image",
+   "src": "",
+   "publicSrc": "https://raw.githubusercontent.com/mwatkins03-netizen/The-Grove-Lab/main/shots/sentence-sound.jpg",
+   "alt": "Opening screen of Write Music: the headline Hear What Your Sentences Are Playing beside a paragraph with each sentence highlighted in a color for its length.",
+   "caption": "A monotone sample: six sentences of six words. Variety score 0/100.",
+   "size": "full"
+  },
+  {
+   "id": "b7q9m2i0h",
+   "type": "paragraph",
+   "html": "<b>Ready to try?</b> Describe your idea in a few sentences on the <a href=\"https://mwatkins03-netizen.github.io/The-Grove-Lab/form.html\">build form</a>, download it, and email it to mwatkins@olemiss.edu with the subject line Grove Lab build idea."
+  },
+  {
+   "id": "bz2uep1en",
+   "type": "band",
+   "text": "Dates and resources"
+  },
+  {
+   "id": "bthjxjqi3",
+   "type": "section",
+   "label": "On campus",
+   "heading": "AI events at UM",
+   "deck": ""
+  },
+  {
+   "id": "bogz5kok1",
+   "type": "events",
+   "items": [
+    {
+     "date": "Oct 23",
+     "when": "Fri, 2:30 to 4 pm",
+     "title": "Book launch: The Norton Guide to AI Aware Teaching",
+     "url": "https://eventcalendar.olemiss.edu/event/book-launch-for-the-norton-guide-to-ai-aware-teaching",
+     "detail": "With co-authors Annette Vee (virtual), Marc Watkins and Derek Bruff. Johnson Commons Banquet Room. In-person registration has closed; join on Zoom from the event page.",
+     "where": "UM"
+    },
+    {
+     "date": "Nov 6",
+     "when": "Fri, 9 to 10:30 am",
+     "title": "Artificial Intelligence Task Force",
+     "url": "https://eventcalendar.olemiss.edu/event/artificial-intelligence-task-force-1445",
+     "detail": "Lyceum 200 and Zoom. Free and open to all faculty and staff. Email innovation@olemiss.edu to join the list.",
+     "where": "UM"
+    },
+    {
+     "date": "Dec 4",
+     "when": "Fri, 9 to 10:30 am",
+     "title": "Artificial Intelligence Task Force",
+     "url": "https://eventcalendar.olemiss.edu/event/artificial-intelligence-task-force-1445",
+     "detail": "December meeting. Spring 2027 dates: Feb 5, Mar 5, Apr 2 and May 7.",
+     "where": "UM"
+    }
+   ]
+  },
+  {
+   "id": "b6zv0mwuf",
+   "type": "section",
+   "label": "Beyond campus",
+   "heading": "Conferences, webinars and calls",
+   "deck": "Dates and prices from each organizer as of Oct 20, 2026. Check before registering."
+  },
+  {
+   "id": "bxbv932by",
+   "type": "heading",
+   "text": "Events",
+   "level": 3
+  },
+  {
+   "id": "bv7s6ehog",
+   "type": "events",
+   "items": [
+    {
+     "date": "Nov 5",
+     "when": "Online",
+     "title": "The Classroom of 2036",
+     "url": "https://chronicle.com/page/Events/623",
+     "detail": "Chronicle of Higher Education virtual forum on AI tutors and the future classroom, 1 pm CT. Sponsored by Cisco.",
+     "where": ""
+    },
+    {
+     "date": "Nov 16 to 19",
+     "when": "Orlando, FL",
+     "title": "OLC Accelerate 2026",
+     "url": "https://onlinelearningconsortium.org/conferences/olc-accelerate2026",
+     "detail": "Includes an AI Summit on Nov 17 at no added fee.",
+     "where": ""
+    },
+    {
+     "date": "Nov 18 to 20",
+     "when": "Baltimore and virtual",
+     "title": "POD Network Annual Conference",
+     "url": "https://podnetwork.org/annual-conference/baltimore-2026/",
+     "detail": "Virtual pass $130 for members.",
+     "where": ""
+    },
+    {
+     "date": "Nov 19 to 21",
+     "when": "Oxford, OH",
+     "title": "Original Lilly Conference",
+     "url": "https://sites.miamioh.edu/lillycon/",
+     "detail": "Plenary: Always Human: Designing Teaching Futures in the Age of AI.",
+     "where": ""
+    },
+    {
+     "date": "Dec 1 to 2",
+     "when": "Online",
+     "title": "AI in Education Conference",
+     "url": "https://www.magnapubs.com/ai-in-education-conference/",
+     "detail": "Magna Publications. $449 if you register by Nov 20.",
+     "where": ""
+    },
+    {
+     "date": "Jan 20 to 22",
+     "when": "Seattle, WA",
+     "title": "AAC&amp;U Annual Meeting 2027",
+     "url": "https://www.aacu.org/event/annual-meeting-2027",
+     "detail": "Early-bird rate ends Nov 13.",
+     "where": ""
+    }
+   ]
+  },
+  {
+   "id": "bfqrclri1",
+   "type": "heading",
+   "text": "Calls for proposals and papers",
+   "level": 3
+  },
+  {
+   "id": "bqzj865uf",
+   "type": "events",
+   "items": [
+    {
+     "date": "Nov 10",
+     "when": "Deadline",
+     "title": "OLC Innovate 2027 proposals",
+     "url": "https://onlinelearningconsortium.org/?p=23777",
+     "detail": "Virtual conference, Apr 20 to 22, 2027.",
+     "where": ""
+    },
+    {
+     "date": "Dec 20",
+     "when": "Deadline",
+     "title": "Journal for Writing and AI: Audiovisual Creation in the Age of AI",
+     "url": "https://www.jwai.org/avc",
+     "detail": "Abstracts due.",
+     "where": ""
+    },
+    {
+     "date": "Dec 28",
+     "when": "Deadline",
+     "title": "Teaching Professor Conference 2027 proposals",
+     "url": "https://www.magnapubs.com/teaching-professor-conference-2027/call-for-proposals/",
+     "detail": "Atlanta, June 11 to 13, 2027.",
+     "where": ""
+    },
+    {
+     "date": "Jan 15",
+     "when": "Deadline",
+     "title": "Journal of Statistics and Data Science Education: Building AI-Powered Learning Experiences",
+     "url": "https://think.taylorandfrancis.com/special_issues/ai-powered-learning/",
+     "detail": "Open-access special issue.",
+     "where": ""
+    }
+   ]
+  },
+  {
+   "id": "brdl1erbf",
+   "type": "section",
+   "label": "Teaching toolkit",
+   "heading": "Resources for your courses",
+   "deck": ""
+  },
+  {
+   "id": "bqfoeqh3a",
+   "type": "resource",
+   "title": "UM Libraries AI Guide",
+   "url": "https://guides.lib.olemiss.edu/c.php?g=1362389&p=10266256",
+   "source": "UM resource",
+   "access": "UM access",
+   "html": "AI literacy, citing AI, sample syllabus statements and the case against relying on detectors.",
+   "um": true,
+   "buttonText": "Open"
+  },
+  {
+   "id": "bv90ric7p",
+   "type": "resource",
+   "title": "AI for Teachers (AIG)",
+   "url": "https://olemiss.edu/departments/provost/academic-innovations-group/events/ai-for-teachers/index.php",
+   "source": "UM resource",
+   "access": "UM access",
+   "html": "Copilot at UM, Blackboard's AI Design Assistant, disclosure frameworks and an AI-assisted learning template.",
+   "um": true,
+   "buttonText": "Open"
+  },
+  {
+   "id": "bhkqdlmtt",
+   "type": "resource",
+   "title": "Human Wisdom for the Age of AI",
+   "url": "https://www.aacu.org/publication/human-wisdom",
+   "source": "External, free",
+   "access": "Free",
+   "html": "AAC&amp;U and Elon University field guide for students, with teaching modules (2026).",
+   "um": false,
+   "buttonText": "Open"
+  },
+  {
+   "id": "b7ns26lrw",
+   "type": "resource",
+   "title": "TextGenEd: Continuing Experiments",
+   "url": "https://wacclearinghouse.org/repository/collections/continuing-experiments/",
+   "source": "External, free",
+   "access": "Free",
+   "html": "Peer-reviewed writing assignments that use generative AI.",
+   "um": false,
+   "buttonText": "Open"
+  },
+  {
+   "id": "bbqcab69m",
+   "type": "resource",
+   "title": "AI Pedagogy Project",
+   "url": "https://aipedagogy.org/",
+   "source": "External, free",
+   "access": "Free",
+   "html": "Searchable AI assignments from many disciplines (metaLAB at Harvard).",
+   "um": false,
+   "buttonText": "Open"
+  },
+  {
+   "id": "b64p2g158",
+   "type": "paragraph",
+   "html": "Every article we track is in the <a href=\"https://docs.google.com/spreadsheets/d/1NTvbKyxJNi1Mt5fTX_RamA7G0QM2zovxU_VDurryoIY/edit\">Taming the Whirlwind article log</a> (Google Sheets)."
+  },
+  {
+   "id": "bz6tnovmi",
+   "type": "band",
+   "text": "About this issue"
+  },
+  {
+   "id": "bzwdiaeq1",
+   "type": "disclosure",
+   "label": "Disclosure",
+   "heading": "How this issue was made",
+   "items": [
+    {
+     "term": "AI tool used",
+     "text": "Claude, an AI model made by Anthropic, used in Claude's Cowork mode."
+    },
+    {
+     "term": "What the AI did",
+     "text": "Searched for news, giving priority to NPR, The Chronicle of Higher Education and The New York Times and to education stories. Opened each article to confirm its date, outlet and access. Drafted the summaries and classroom suggestions, gathered events, calls and resources from their own pages, wrote the Made at UM and Grove Lab descriptions from those tools' public pages, captured the tool screenshots in the web edition by running each tool's public code, and laid out the page, the Google Doc and the email edition."
+    },
+    {
+     "term": "What people did",
+     "text": "Marc Watkins set the scope, priorities and sources, chose the Made at UM tools and the Grove Lab call, and reviews and edits each issue before it is sent. He writes the editor's note. This pilot issue has not yet been reviewed."
+    },
+    {
+     "term": "Limits",
+     "text": "AI summaries can get details wrong, so read the original before citing. NPR and The New York Times block automated reading, so NPR stories were checked on member-station copies, and no Times stories on these topics were found for this period. Event details can change."
+    },
+    {
+     "term": "Not used",
+     "text": "No AI-generated images. Grove Lab images come from the lab's own gallery. No student or personnel data."
+    }
+   ],
+   "foot": "Spot an error? Write to innovation@olemiss.edu."
+  }
+ ]
+}
